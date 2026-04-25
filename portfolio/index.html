@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of an Electrical and Electronic Engineering student at University of Rajshahi and Robotics Enthusiast.">
+    <title>Robotics & EEE Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Three.js Galaxy Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="neon-text">EEE</span>.Robotics
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="subtitle">Welcome to my space</h2>
+            <h1 class="title">Hi, I'm <span class="neon-text">PRANTO PROTIM DATTA</span></h1>
+            <p class="description">
+                UG Student of Electrical & Electronic Engineering at <span class="highlight">University of
+                    Rajshahi</span>.<br>
+                A passionate <span class="highlight">Robotics Enthusiast</span> building the future of automation.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary-btn">View Projects</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <div class="glowing-circle"></div>
+            <!-- Using the user's image -->
+            <div class="hologram-avatar">
+                <img src="semi_formal.jpg" alt="Pranto Protim Datta" class="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <h2 class="section-title">About <span class="neon-text">Me</span></h2>
+        <div class="about-container glass-panel reveal">
+            <div class="about-text">
+                <p>
+                    I am an undergraduate student majoring in Electrical and Electronic Engineering at the University of
+                    Rajshahi. My fascination lies at the intersection of hardware and software, bringing circuits to
+                    life through code.
+                </p>
+                <p>
+                    As a robotics enthusiast, I spend my time designing PCBs, programming microcontrollers, and
+                    developing autonomous systems. I believe in learning by doing and constantly challenging myself with
+                    new engineering problems.
+                </p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3 class="stat-number neon-text">3+</h3>
+                        <p class="stat-label">Years of Electronics</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number neon-text">10+</h3>
+                        <p class="stat-label">Hardware Projects</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number neon-text">1st</h3>
+                        <p class="stat-label">Robotics Competitions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <h2 class="section-title">Core <span class="neon-text">Skills</span></h2>
+        <div class="skills-grid reveal">
+            <div class="skill-card glass-panel">
+                <i class="fa-solid fa-microchip skill-icon"></i>
+                <h3>Microcontrollers</h3>
+                <p>Arduino, ESP32, STM32, Raspberry Pi, Embedded C</p>
+            </div>
+            <div class="skill-card glass-panel">
+                <i class="fa-solid fa-circuit-board skill-icon"></i>
+                <h3>Circuit Design</h3>
+                <p>PCB Layout, Schematic Design, Altium, Proteus, Kicad</p>
+            </div>
+            <div class="skill-card glass-panel">
+                <i class="fa-solid fa-code skill-icon"></i>
+                <h3>Programming</h3>
+                <p>C/C++, Python, Basic JavaScript & Web interfaces for IoT</p>
+            </div>
+            <div class="skill-card glass-panel">
+                <i class="fa-solid fa-robot skill-icon"></i>
+                <h3>Robotics</h3>
+                <p>Kinematics, Sensors (LiDAR, IR, Ultrasonic), Actuators, ROS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <h2 class="section-title">Featured <span class="neon-text">Projects</span></h2>
+        <div class="projects-grid reveal">
+
+            <div class="project-card glass-panel">
+                <div class="project-img-placeholder">
+                    <i class="fa-solid fa-car"></i>
+                </div>
+                <div class="project-info">
+                    <h3>Autonomous Rover</h3>
+                    <p>An autonomous line-following and obstacle-avoiding robot using ESP32, equipped with ultrasonic
+                        sensors and PID control logic.</p>
+                    <div class="tags">
+                        <span>ESP32</span>
+                        <span>C++</span>
+                        <span>Robotics</span>
+                    </div>
+                    <a href="#" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card glass-panel">
+                <div class="project-img-placeholder">
+                    <i class="fa-solid fa-home"></i>
+                </div>
+                <div class="project-info">
+                    <h3>IoT Smart Home</h3>
+                    <p>A web-controlled smart home automation system utilizing relay modules and NodeMCU for remote
+                        appliance management.</p>
+                    <div class="tags">
+                        <span>IoT</span>
+                        <span>NodeMCU</span>
+                        <span>Relays</span>
+                    </div>
+                    <a href="#" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card glass-panel">
+                <div class="project-img-placeholder">
+                    <i class="fa-solid fa-plane-up"></i>
+                </div>
+                <div class="project-info">
+                    <h3>Custom Flight Controller</h3>
+                    <p>A drone flight controller built from scratch using an STM32 microcontroller and MPU6050 gyroscope
+                        with custom PID tuning.</p>
+                    <div class="tags">
+                        <span>STM32</span>
+                        <span>Drones</span>
+                        <span>Control Systems</span>
+                    </div>
+                    <a href="#" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <h2 class="section-title">Get In <span class="neon-text">Touch</span></h2>
+        <div class="contact-container glass-panel reveal">
+            <div class="contact-info">
+                <h3>Let's build something amazing together!</h3>
+                <p>Whether you want to discuss robotics, collaborate on a project, or just say hi, my inbox is always
+                    open.</p>
+
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="input-group">
+                    <input type="text" required placeholder="Your Name">
+                </div>
+                <div class="input-group">
+                    <input type="email" required placeholder="Your Email">
+                </div>
+                <div class="input-group">
+                    <textarea rows="5" required placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn submit-btn">Send Message <i
+                        class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Your Name]. Crafted with passion & electrons.</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
